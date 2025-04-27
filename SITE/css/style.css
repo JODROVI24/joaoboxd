@@ -1,0 +1,116 @@
+:root {
+    --background-color: #202830;
+    --secondary-bg-color: #c5c5b2;
+    --content-bg-color: #e8e8d9;
+    --link-color: #4b566a;
+    --info-bg-color: gray;
+    --highlight-color: aqua;
+    --gradient-start: #202830;
+    --gradient-end: #14181c;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 1.6;
+}
+
+#principal {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--content-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+#topo {
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+#conteudo {
+    background-color: var(--content-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+#rodape {
+    text-align: center;
+    padding: 15px;
+    background-color: #14181c; /* Cor escura para combinar com o gradiente */
+    color: white; /* Texto branco para contraste */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+#forma {
+    background-color: #4b566a; /* Cor cinza-azulada para combinar com o site */
+    color: white; /* Texto branco para contraste */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Adiciona espaço para evitar sobreposição com o rodapé */
+}
+
+#forma:hover {
+    transform: scale(1.05);
+}
+
+.info {
+    background-color: var(--info-bg-color);
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: darkblue;
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.container img {
+    flex-shrink: 0;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container .info {
+    flex-grow: 1;
+}
